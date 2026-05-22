@@ -1,0 +1,69 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+Phone: 8520977573
+Email: keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+An accomplished technology executive with extensive experience driving enterprise data strategy, platform modernization, and operational excellence within highly regulated financial environments. Proven track record in orchestrating complex, end-to-end data governance frameworks and large-scale delivery initiatives that harmonize infrastructure performance with business intelligence requirements. Adept at navigating cross-functional ecosystems to establish robust metadata management, quality controls, and compliance standards. Expert in bridging the gap between technical architecture and strategic business outcomes to power advanced analytics and decisioning. I am eager to leverage my background in data management and infrastructure leadership to drive strategic excellence as a Vice President Lead at JP Morgan.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Enterprise Data Strategy, Data Governance & Compliance, Product Lifecycle Leadership, Stakeholder Influence, Strategic Planning, Risk Management, Operational Efficiency, Cross-functional Program Delivery
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Advise enterprise BFSI clients on strategic data governance frameworks and ITIL-aligned service quality standards.
+- Design frameworks to enhance data reliability and minimize systemic failure, ensuring consistency across complex enterprise environments.
+- Direct FinOps initiatives to optimize resource utilization and budget management through advanced cloud cost dashboards and accelerators.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Oversaw global technology service delivery for large-scale, mission-critical infrastructure, ensuring performance and capacity alignment.
+- Executed a large-scale vendor displacement program, successfully insourcing operations to enhance control and enterprise agility.
+- Orchestrated Cloud and AIOps enablement initiatives to automate system responses and improve platform reliability for 100,000+ assets.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed substantial global OPEX budgets, realizing significant financial outcomes through automation and license optimization.
+- Provided global delivery leadership for complex financial service engagements, ensuring strict adherence to regulatory requirements.
+- Scaled the Capacity Management Center of Excellence from 10 to 250 members, standardizing global frameworks for end-to-end capacity planning.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Delivered ITSM consulting and automation strategies specifically for telecommunications and BFSI sector clients.
+- Led the implementation of Problem and Change Management governance, chaired CAB, and managed risk-controlled release cycles.
+- Conducted diagnostic assessments to implement optimized frameworks, enhancing operational compliance and efficiency.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Deployed and governed enterprise monitoring toolsets, ensuring visibility and performance across complex healthcare and telecommunication platforms.
+- Managed release deployments, mitigating disruption for critical stakeholder systems.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Directed high-impact escalations for mission-critical systems and reduced downtime through root cause identification.
+- Mentored technical teams and formalized standard operating procedures to ensure consistent service delivery.
+[/EXPERIENCE]
+
+[PROJECTS]
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Data Governance: Metadata Management, Data Lifecycle Governance, Compliance Frameworks, Quality Validation
+Cloud & FinOps: Hybrid-Cloud Optimization, Cost Dashboarding, Capacity Modeling
+Monitoring & ITSM: ServiceNow, AIOps, Enterprise Monitoring, ITIL Frameworks
+BI & Analysis: KPI Governance, Performance Metrics, Analytical Reporting
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+- Microsoft Azure Solutions Architect Expert
+- AWS Certified Cloud Practitioner
+- FinOps Certified Practitioner
+- Google Digital Leader
+- IBM Architect & Consulting Badges
+- ITIL v3 / COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+- Post Graduate Programme in Project Management – IIT Roorkee, 2025
+- Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+- Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
