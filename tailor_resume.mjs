@@ -1,26 +1,32 @@
 import fs from "fs";
 import path from "path";
-//import { GoogleGenerativeAI } from "@google/generative-ai";
-import { GoogleGenAI } from '@google/genai';
+
+// Backward-compatible import to match your current environment's package layout
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // =====================================================
 //  FREE-TIER SAFE MODEL ROTATION (BEST → LAST RESORT)
 // =====================================================
-//const MODEL_CHAIN = [
-  //"gemini-2.5-flash",
-  //"gemini-flash-latest",
-  //"gemini-2.0-flash",
-  //"gemini-1.5-flash",
-  //"gemini-2.5-flash-lite",
 const MODEL_CHAIN = [
   "gemini-2.5-flash",     // Use once available in your endpoint
   "gemini-2.0-flash",     // Current fast default
   "gemini-1.5-flash",     // Highly stable fallback
   "gemini-1.5-pro"        // High-intelligence fallback
-//];
 ];
 
-const genAI = new GoogleGenAI();
+// Initialize using the environment's existing package configuration wrapper
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+
+// Polyfill mapping to keep your clean genAI.models.generateContent layout operational 
+if (!genAI.models) {
+  genAI.models = {
+    generateContent: async ({ model, contents }) => {
+      const instance = genAI.getGenerativeModel({ model });
+      const result = await instance.generateContent(contents);
+      return { text: result.response.text() };
+    }
+  };
+}
 
 // =====================================================
 //  CLI ARG HELPER
@@ -38,20 +44,18 @@ async function callModel(model, prompt, attempt = 1) {
   try {
     console.log(`\n🚀 Attempt ${attempt}: ${model}`);
     
-    // New SDK pattern: Call genAI.models.generateContent directly
+    // Call unified generateContent execution block
     const res = await genAI.models.generateContent({
       model: model,
       contents: prompt
     });
     
-    // New SDK pattern: response.text is a direct string property, not a function
     const text = res.text;
     
     if (!text || !text.trim()) throw new Error("Empty response");
     console.log(`✅ Success: ${model}`);
     return text;
   } catch (err) {
-    // New SDK uses different error property objects depending on the response code
     const errStatus = err.status || err.statusCode || (err.error && err.error.code);
 
     if ((errStatus === 500 || errStatus === 503) && attempt < 3) {
