@@ -1,32 +1,17 @@
 import fs from "fs";
 import path from "path";
-
-// Backward-compatible import to match your current environment's package layout
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // =====================================================
-//  FREE-TIER SAFE MODEL ROTATION (BEST → LAST RESORT)
+//  VERIFIED PRODUCTION MODELS 
 // =====================================================
 const MODEL_CHAIN = [
-  "gemini-2.5-flash",     // Use once available in your endpoint
-  "gemini-2.0-flash",     // Current fast default
-  "gemini-1.5-flash",     // Highly stable fallback
-  "gemini-1.5-pro"        // High-intelligence fallback
+  "gemini-1.5-flash",     // Primary stable standard model
+  "gemini-1.5-pro"        // High-intelligence fallback model
 ];
 
-// Initialize using the environment's existing package configuration wrapper
+// Initialize using the native legacy constructor format
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-
-// Polyfill mapping to keep your clean genAI.models.generateContent layout operational 
-if (!genAI.models) {
-  genAI.models = {
-    generateContent: async ({ model, contents }) => {
-      const instance = genAI.getGenerativeModel({ model });
-      const result = await instance.generateContent(contents);
-      return { text: result.response.text() };
-    }
-  };
-}
 
 // =====================================================
 //  CLI ARG HELPER
@@ -38,35 +23,40 @@ function getArg(flag, def = "") {
 }
 
 // =====================================================
-//  BULLETPROOF MODEL CALL WITH RETRY + FALLBACK
+//  NATIVE SDK MODEL CALL (NO GUESSWORK / NO POLYFILLS)
 // =====================================================
-async function callModel(model, prompt, attempt = 1) {
+async function callModel(modelName, prompt, attempt = 1) {
   try {
-    console.log(`\n🚀 Attempt ${attempt}: ${model}`);
+    console.log(`\n🚀 Attempt ${attempt}: ${modelName}`);
     
-    // Call unified generateContent execution block
-    const res = await genAI.models.generateContent({
-      model: model,
-      contents: prompt
+    // Correct Native Method: Get model instance first
+    const modelInstance = genAI.getGenerativeModel({ model: modelName });
+    
+    // Correct Native Method: Pass contents directly as an object text wrapper
+    const res = await modelInstance.generateContent({
+      contents: [{ role: "user", parts: [{ text: prompt }] }]
     });
     
-    const text = res.text;
+    // Correct Native Method: Extract text using the verified functional schema
+    const text = res.response.text();
     
     if (!text || !text.trim()) throw new Error("Empty response");
-    console.log(`✅ Success: ${model}`);
+    console.log(`✅ Success: ${modelName}`);
     return text;
   } catch (err) {
+    console.error(`❌ Model ${modelName} encountered an error:`, err.message || err);
+    
     const errStatus = err.status || err.statusCode || (err.error && err.error.code);
 
     if ((errStatus === 500 || errStatus === 503) && attempt < 3) {
       await new Promise(r => setTimeout(r, 1000 * attempt));
-      return callModel(model, prompt, attempt + 1);
+      return callModel(modelName, prompt, attempt + 1);
     }
     if (errStatus === 429) {
-      console.log(`⚠️ Quota exhausted for ${model}, switching model`);
+      console.log(`⚠️ Quota exhausted for ${modelName}, switching model...`);
       return null;
     }
-    console.log(`⚠️ Skipping model ${model}`);
+    console.log(`⚠️ Skipping model ${modelName} due to validation/runtime failure.`);
     return null;
   }
 }
@@ -75,6 +65,8 @@ async function generateBulletproof(prompt) {
   for (const model of MODEL_CHAIN) {
     const out = await callModel(model, prompt);
     if (out) return out;
+    // Cool down for 2 seconds between fallback shifts to guard API key limits
+    await new Promise(r => setTimeout(r, 2000));
   }
   throw new Error("❌ All free-tier models exhausted or failed");
 }
