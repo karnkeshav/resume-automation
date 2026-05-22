@@ -2,15 +2,25 @@ import { spawnSync } from "child_process";
 import path from "path";
 import fs from "fs";
 
-// Small helper to get CLI args
+// =====================================================
+// CLI ARG HELPER
+// =====================================================
 function getArg(flag, def = "") {
   const i = process.argv.indexOf(flag);
-  if (i === -1 || i === process.argv.length - 1) return def;
+
+  if (i === -1 || i === process.argv.length - 1) {
+    return def;
+  }
+
   return process.argv[i + 1];
 }
 
+// =====================================================
+// COMMAND RUNNER
+// =====================================================
 function run(cmd, args, options = {}) {
   console.log(`\n> ${cmd} ${args.join(" ")}`);
+
   const result = spawnSync(cmd, args, {
     stdio: "inherit",
     shell: process.platform === "win32",
@@ -18,98 +28,206 @@ function run(cmd, args, options = {}) {
   });
 
   if (result.status !== 0) {
-    console.error(`Command failed: ${cmd} ${args.join(" ")}`);
+    console.error(`❌ Command failed: ${cmd} ${args.join(" ")}`);
+
     process.exit(result.status || 1);
   }
 }
 
+// =====================================================
+// MAIN PIPELINE
+// =====================================================
 async function main() {
-  // These should mirror what you already pass to tailor_resume.mjs
+  // ---------------------------------------------------
+  // CLI INPUTS
+  // ---------------------------------------------------
   const company = getArg("--company");
   const jobTitle = getArg("--job-title");
-  const jobDescFile = getArg("--job-desc-file"); // <- IMPORTANT
-  const resumeMode = getArg("--resume-mode", "infra"); // example
-  const methodologies = getArg("--methodologies", ""); // optional
+  const jobDescFile = getArg("--job-desc-file");
+
+  const resumeMode = getArg("--resume-mode", "infra");
+
+  const methods = getArg("--methods", "");
 
   if (!company || !jobTitle || !jobDescFile) {
-    console.error(
-      "Usage: node scripts/run_full_resume_pipeline.mjs " +
-        "--company \"Company\" " +
-        "--job-title \"Role\" " +
-        "--job-desc-file path/to/jd.txt " +
-        "[--resume-mode infra|infra+development|development] " +
-        "[--methodologies \"Agile,FinOps\"]"
-    );
+    console.error(`
+Usage:
+node scripts/run_full_resume_pipeline.mjs \
+  --company "Google" \
+  --job-title "Senior Cloud Architect" \
+  --job-desc-file jd.txt \
+  [--resume-mode infra|dev|hybrid] \
+  [--methods "Agile,FinOps,AI"]
+`);
+
     process.exit(1);
   }
 
-  // ---------------------------
-  // 1) Run Phase-1 (tailor_resume.mjs)
-  // ---------------------------
-  // ⚠️ Adjust these args to match your existing tailor_resume.mjs exactly.
+  // =====================================================
+  // PHASE 1 — TAILORING
+  // =====================================================
   run("node", [
     "scripts/tailor_resume.mjs",
+
     "--company",
     company,
+
     "--job-title",
     jobTitle,
+
     "--job-desc-file",
     jobDescFile,
+
     "--resume-mode",
     resumeMode,
-    "--methodologies",
-    methodologies,
+
+    "--methods",
+    methods,
   ]);
 
-  // ---------------------------
-  // 2) Locate Phase-1 outputs (raw.txt + job folder)
-  // ---------------------------
-  //
-  // Here I'm assuming your Phase-1 already writes something like:
-  // jobs/<slug>/raw.txt
-  //
-  // If you already know the job folder name pattern, you can compute it here.
-  // For now I'll assume you store a "latest_job_path.txt" or similar, or you
-  // define a deterministic folder name from company + job title.
-  //
-  // Replace this block with your real logic if needed.
-  // ---------------------------
+  // =====================================================
+  // LOCATE LATEST GENERATED JOB FOLDER
+  // =====================================================
+  const jobsRoot = "jobs";
 
-  // Example: derive a simple slug + folder
-  const safeCompany = company.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-  const safeTitle = jobTitle.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-  const jobFolder = path.join("jobs", `${safeCompany}__${safeTitle}`);
+  if (!fs.existsSync(jobsRoot)) {
+    console.error("❌ jobs directory not found.");
 
-  const rawFile = path.join(jobFolder, "raw.txt");
-  const phase2OutDir = path.join(jobFolder, "phase2");
-
-  if (!fs.existsSync(rawFile)) {
-    console.error(
-      `Could not find Phase-1 raw resume at: ${rawFile}\n` +
-        `Make sure tailor_resume.mjs writes raw.txt into that folder, or adjust the path logic here.`
-    );
     process.exit(1);
   }
 
-  // ---------------------------
-  // 3) Run Phase-2 (refine_resume.mjs)
-  // ---------------------------
+  // ---------------------------------------------------
+  // Latest company folder
+  // ---------------------------------------------------
+  const companyFolders = fs
+    .readdirSync(jobsRoot)
+    .map(name => ({
+      name,
+      path: path.join(jobsRoot, name),
+      stat: fs.statSync(path.join(jobsRoot, name)),
+    }))
+    .filter(x => x.stat.isDirectory())
+    .sort((a, b) => b.stat.mtimeMs - a.stat.mtimeMs);
+
+  if (!companyFolders.length) {
+    console.error("❌ No company folders found.");
+
+    process.exit(1);
+  }
+
+  const latestCompanyFolder = companyFolders[0].path;
+
+  // ---------------------------------------------------
+  // Latest role folder
+  // ---------------------------------------------------
+  const roleFolders = fs
+    .readdirSync(latestCompanyFolder)
+    .map(name => ({
+      name,
+      path: path.join(latestCompanyFolder, name),
+      stat: fs.statSync(path.join(latestCompanyFolder, name)),
+    }))
+    .filter(x => x.stat.isDirectory())
+    .sort((a, b) => b.stat.mtimeMs - a.stat.mtimeMs);
+
+  if (!roleFolders.length) {
+    console.error("❌ No role folders found.");
+
+    process.exit(1);
+  }
+
+  const latestRoleFolder = roleFolders[0].path;
+
+  // ---------------------------------------------------
+  // Latest timestamp folder
+  // ---------------------------------------------------
+  const timestampFolders = fs
+    .readdirSync(latestRoleFolder)
+    .map(name => ({
+      name,
+      path: path.join(latestRoleFolder, name),
+      stat: fs.statSync(path.join(latestRoleFolder, name)),
+    }))
+    .filter(x => x.stat.isDirectory())
+    .sort((a, b) => b.stat.mtimeMs - a.stat.mtimeMs);
+
+  if (!timestampFolders.length) {
+    console.error("❌ No timestamp folders found.");
+
+    process.exit(1);
+  }
+
+  const latestTimestampFolder = timestampFolders[0].path;
+
+  // =====================================================
+  // PHASE 1 OUTPUTS
+  // =====================================================
+  const rawFile = path.join(
+    latestTimestampFolder,
+    "raw.txt"
+  );
+
+  const phase2OutDir = path.join(
+    latestTimestampFolder,
+    "phase2"
+  );
+
+  if (!fs.existsSync(rawFile)) {
+    console.error(`
+❌ Could not find Phase-1 raw resume:
+
+${rawFile}
+
+Make sure tailor_resume.mjs generated raw.txt correctly.
+`);
+
+    process.exit(1);
+  }
+
+  // =====================================================
+  // PHASE 2 — REVIEW + REFINEMENT
+  // =====================================================
   run("node", [
     "scripts/refine_resume.mjs",
+
     "--job-desc-file",
     jobDescFile,
+
     "--raw-file",
     rawFile,
+
     "--out-dir",
     phase2OutDir,
+
+    "--company",
+    company,
+
+    "--role",
+    jobTitle,
+
+    "--resume-mode",
+    resumeMode,
   ]);
 
-  console.log("\n✅ Full pipeline complete.");
-  console.log("Phase-1 raw:", rawFile);
-  console.log("Phase-2 review + refined:", phase2OutDir);
+  // =====================================================
+  // SUCCESS
+  // =====================================================
+  console.log("\n✅ Full resume pipeline completed successfully.");
+
+  console.log(`\n📄 Phase-1 Raw Resume:
+${rawFile}`);
+
+  console.log(`\n📄 Phase-2 Refined Resume Folder:
+${phase2OutDir}`);
 }
 
+// =====================================================
+// ENTRY
+// =====================================================
 main().catch((err) => {
+  console.error("\n❌ FATAL ERROR:");
+
   console.error(err);
+
   process.exit(1);
 });
