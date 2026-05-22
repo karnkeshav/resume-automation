@@ -4,7 +4,8 @@
 
 import fs from "fs";
 import path from "path";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+//import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from '@google/genai';
 
 import {
   Document,
@@ -16,15 +17,21 @@ import {
 // ============================================================================
 //  FREE-TIER MODEL FALLBACK (SAFE)
 // ============================================================================
+//const MODEL_CHAIN = [
+//  "gemini-2.5-flash",
+//  "gemini-flash-latest",
+//  "gemini-2.0-flash",
+//  "gemini-1.5-flash",
+//  "gemini-2.5-flash-lite"
+//];
 const MODEL_CHAIN = [
-  "gemini-2.5-flash",
-  "gemini-flash-latest",
-  "gemini-2.0-flash",
-  "gemini-1.5-flash",
-  "gemini-2.5-flash-lite"
+  "gemini-2.5-flash",     // Use once available in your endpoint
+  "gemini-2.0-flash",     // Current fast default
+  "gemini-1.5-flash",     // Highly stable fallback
+  "gemini-1.5-pro"        // High-intelligence fallback
 ];
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenAI();
 
 // ============================================================================
 //  ARG PARSER
@@ -42,12 +49,20 @@ async function callGemini(prompt) {
   let lastErr = null;
   for (const model of MODEL_CHAIN) {
     try {
-      const m = genAI.getGenerativeModel({ model });
-      const r = await m.generateContent(prompt);
-      const t = r.response.text();
+      // New SDK pattern: Call genAI.models.generateContent directly
+      const r = await genAI.models.generateContent({
+        model: model,
+        contents: prompt
+      });
+      
+      // New SDK pattern: response.text is now a direct string property, not a function
+      const t = r.text; 
+      
       if (t && t.trim()) return t;
     } catch (e) {
       lastErr = e;
+      // Optional: Add a brief console warning to see which fallback model is slipping
+      console.warn(`⚠️ Model ${model} failed, switching to next fallback...`);
     }
   }
   throw lastErr || new Error("All models failed");
