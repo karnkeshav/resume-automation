@@ -1,10 +1,10 @@
 // ============================================================================
-// refine_resume.mjs — PHASE 2 (REVIEW + GAP FIX, VP MODE)
+// refine_resume.mjs — UPDATED FOR @google/genai SDK
 // ============================================================================
 
 import fs from "fs";
 import path from "path";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 
 import {
   Document,
@@ -14,18 +14,21 @@ import {
 } from "docx";
 
 // ============================================================================
-//  VERIFIED PRODUCTION MODELS
+// VERIFIED PRODUCTION MODEL
 // ============================================================================
 const MODEL_CHAIN = [
-  "gemini-1.5-flash",     // Primary stable standard model
-  "gemini-1.5-pro"        // High-intelligence fallback model
+  "gemini-3.1-flash-lite-preview"
 ];
 
-// Initialize using the native legacy constructor format
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+// ============================================================================
+// INITIALIZE NEW GENAI SDK
+// ============================================================================
+const genAI = new GoogleGenAI({
+  apiKey: process.env.GEMINI_API_KEY
+});
 
 // ============================================================================
-//  ARG PARSER
+// ARG PARSER
 // ============================================================================
 function getArg(flag, def = "") {
   const i = process.argv.indexOf(flag);
@@ -34,41 +37,44 @@ function getArg(flag, def = "") {
 }
 
 // ============================================================================
-//  NATIVE SDK MODEL CALL (NO GUESSWORK / NO POLYFILLS)
+// NEW GENAI SDK MODEL CALL
 // ============================================================================
 async function callGemini(prompt) {
   let lastErr = null;
+
   for (const modelName of MODEL_CHAIN) {
     try {
       console.log(`\n🚀 Attempting Phase-2 refinement with model: ${modelName}`);
-      
-      // Get the correct native model instance
-      const modelInstance = genAI.getGenerativeModel({ model: modelName });
-      
-      // Pass content using the verified legacy text array configuration object
-      const r = await modelInstance.generateContent({
-        contents: [{ role: "user", parts: [{ text: prompt }] }]
+
+      const response = await genAI.models.generateContent({
+        model: modelName,
+        contents: prompt
       });
-      
-      // Extract text with the verified schema method
-      const t = r.response.text(); 
-      
-      if (t && t.trim()) {
+
+      const text = response.text;
+
+      if (text && text.trim()) {
         console.log(`✅ Success: ${modelName}`);
-        return t;
+        return text;
       }
+
     } catch (e) {
       lastErr = e;
-      console.warn(`⚠️ Model ${modelName} encountered an error: ${e.message || e}`);
+
+      console.warn(
+        `⚠️ Model ${modelName} encountered an error: ${e.message || e}`
+      );
+
+      // Backoff for rate limits
+      await new Promise(r => setTimeout(r, 10000));
     }
-    // Wait 2 seconds before shifting to fallback to guard API key rate limits
-    await new Promise(r => setTimeout(r, 2000));
   }
+
   throw lastErr || new Error("All models failed");
 }
 
 // ============================================================================
-//  TAG EXTRACTION
+// TAG EXTRACTION
 // ============================================================================
 function extract(tag, text) {
   const r = new RegExp(`\\[${tag}\\]([\\s\\S]*?)\\[\\/${tag}\\]`, "i");
@@ -76,13 +82,12 @@ function extract(tag, text) {
   return m ? m[1].trim() : "";
 }
 
-// Ensure the name string parameter doesn't contain spaces/symbols breaking lines
 function lines(t) {
   return t.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
 }
 
 // ============================================================================
-//  SAFE NAME
+// SAFE NAME
 // ============================================================================
 function safePart(str, max = 30) {
   return str
@@ -93,7 +98,7 @@ function safePart(str, max = 30) {
 }
 
 // ============================================================================
-//  DOCX BUILDER — UNCHANGED
+// DOCX BUILDER
 // ============================================================================
 const FONT = "Calibri";
 
@@ -110,84 +115,166 @@ async function buildDocx(text, outPath) {
   const HEAD = 26;
   const NAME = 38;
 
-  const run = (t, o = {}) => new TextRun({ text: t, font: FONT, size: BODY, ...o });
+  const run = (t, o = {}) =>
+    new TextRun({ text: t, font: FONT, size: BODY, ...o });
+
   const heading = (t) =>
     new Paragraph({
-      children: [new TextRun({ text: t, font: FONT, bold: true, size: HEAD, allCaps: true })],
+      children: [
+        new TextRun({
+          text: t,
+          font: FONT,
+          bold: true,
+          size: HEAD,
+          allCaps: true
+        })
+      ],
       spacing: { before: 200, after: 100 }
     });
+
   const bullet = (t) =>
-    new Paragraph({ text: t, bullet: { level: 0 }, spacing: { after: 60 } });
+    new Paragraph({
+      text: t,
+      bullet: { level: 0 },
+      spacing: { after: 60 }
+    });
 
   const children = [];
 
-  // Header 
-  children.push(new Paragraph({
-    children: [new TextRun({ text: "Keshav Karn", font: FONT, size: NAME, bold: true })],
-    spacing: { after: 40 }
-  }));
-  children.push(new Paragraph({ children: [run("Hyderabad, India | 8520977573 | keshav.karn@gmail.com")] }));
-  children.push(new Paragraph({
-    children: [run("LinkedIn: https://www.linkedin.com/in/keshavkarn/ | Credly: https://www.credly.com/users/keshav-karn")],
-    spacing: { after: 40 }
-  }));
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: "Keshav Karn",
+          font: FONT,
+          size: NAME,
+          bold: true
+        })
+      ],
+      spacing: { after: 40 }
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        run("Hyderabad, India | 8520977573 | keshav.karn@gmail.com")
+      ]
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        run(
+          "LinkedIn: https://www.linkedin.com/in/keshavkarn/ | Credly: https://www.credly.com/users/keshav-karn"
+        )
+      ],
+      spacing: { after: 40 }
+    })
+  );
 
   if (SUMMARY) {
     children.push(heading("EXECUTIVE SUMMARY"));
+
     lines(SUMMARY).forEach(l =>
-      children.push(new Paragraph({ children: [run(l)], spacing: { after: 80 } }))
+      children.push(
+        new Paragraph({
+          children: [run(l)],
+          spacing: { after: 80 }
+        })
+      )
     );
   }
 
   if (CORE) {
     children.push(heading("CORE STRENGTHS"));
-    children.push(new Paragraph({ children: [run(lines(CORE).join(" | "))] }));
+
+    children.push(
+      new Paragraph({
+        children: [run(lines(CORE).join(" | "))]
+      })
+    );
   }
 
   if (EXP) {
     children.push(heading("EXPERIENCE"));
+
     const raw = EXP.split("\n");
     let buf = [];
+
     const flush = () => {
       if (!buf.length) return;
+
       const a = lines(buf.join("\n"));
-      children.push(new Paragraph({ children: [run(a[0], { bold: true })], spacing: { before: 120 } }));
-      a.slice(1).forEach(l => children.push(bullet(l.replace(/^-+\s*/, ""))));
+
+      children.push(
+        new Paragraph({
+          children: [run(a[0], { bold: true })],
+          spacing: { before: 120 }
+        })
+      );
+
+      a.slice(1).forEach(l =>
+        children.push(bullet(l.replace(/^-+\s*/, "")))
+      );
+
       buf = [];
     };
+
     for (const l of raw) {
       if (l.startsWith("Company:")) flush();
       buf.push(l);
     }
+
     flush();
   }
 
   if (PROJ) {
     children.push(heading("PORTFOLIO PROJECTS"));
-    lines(PROJ).forEach(l => children.push(bullet(l.replace(/^-+\s*/, ""))));
+
+    lines(PROJ).forEach(l =>
+      children.push(bullet(l.replace(/^-+\s*/, "")))
+    );
   }
 
   if (TECH) {
     children.push(heading("TECHNICAL LEADERSHIP SKILLS"));
-    lines(TECH).forEach(l => children.push(new Paragraph({ children: [run(l)] })));
+
+    lines(TECH).forEach(l =>
+      children.push(
+        new Paragraph({
+          children: [run(l)]
+        })
+      )
+    );
   }
 
   if (CERT) {
     children.push(heading("CERTIFICATIONS"));
-    lines(CERT).forEach(l => children.push(bullet(l.replace(/^-+\s*/, ""))));
+
+    lines(CERT).forEach(l =>
+      children.push(bullet(l.replace(/^-+\s*/, "")))
+    );
   }
 
   if (EDU) {
     children.push(heading("EDUCATION"));
-    lines(EDU).forEach(l => children.push(bullet(l.replace(/^-+\s*/, ""))));
+
+    lines(EDU).forEach(l =>
+      children.push(bullet(l.replace(/^-+\s*/, "")))
+    );
   }
 
-  const doc = new Document({ sections: [{ children }] });
+  const doc = new Document({
+    sections: [{ children }]
+  });
+
   fs.writeFileSync(outPath, await Packer.toBuffer(doc));
 }
 
 // ============================================================================
-//  MAIN — PHASE 2 REVIEW + GAP FIX
+// MAIN
 // ============================================================================
 async function main() {
   const jdFile = getArg("--job-desc-file");
@@ -198,19 +285,21 @@ async function main() {
   const resumeMode = getArg("--resume-mode", "");
 
   if (!jdFile || !rawFile) {
-    console.error("Usage: node refine_resume.mjs --job-desc-file jd.txt --raw-file raw.txt");
+    console.error(
+      "Usage: node refine_resume.mjs --job-desc-file jd.txt --raw-file raw.txt"
+    );
     process.exit(1);
   }
 
   const jd = fs.readFileSync(jdFile, "utf8");
   const phase1 = fs.readFileSync(rawFile, "utf8");
-  const reviewPrompt = fs.readFileSync("templates/review_prompt.txt", "utf8");
+  const reviewPrompt = fs.readFileSync(
+    "templates/review_prompt.txt",
+    "utf8"
+  );
 
   fs.mkdirSync(outDir, { recursive: true });
 
-  // ------------------------------------------------------------------------
-  // FINAL PHASE-2 PROMPT (with EXTRA_INSTRUCTIONS auto-read by model)
-  // ------------------------------------------------------------------------
   const prompt = `
 ${reviewPrompt}
 
@@ -236,7 +325,11 @@ Output ONLY the final tagged resume.
 
   const finalText = await callGemini(prompt);
 
-  const company = safePart(targetCompany || jd.split("\n")[0], 25);
+  const company = safePart(
+    targetCompany || jd.split("\n")[0],
+    25
+  );
+
   const file = `resume_final_${company}.docx`;
 
   await buildDocx(finalText, path.join(outDir, file));
