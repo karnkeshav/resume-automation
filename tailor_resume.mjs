@@ -1,78 +1,115 @@
+// ============================================================================
+// tailor_resume.mjs — UPDATED FOR @google/genai SDK
+// ============================================================================
+
 import fs from "fs";
 import path from "path";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 
 // =====================================================
-//  VERIFIED PRODUCTION MODELS 
+// VERIFIED PRODUCTION MODEL
 // =====================================================
 const MODEL_CHAIN = [
-  "gemini-1.5-flash",     // Primary stable standard model
-  "gemini-1.5-pro"        // High-intelligence fallback model
+  "gemini-3.1-flash-lite-preview"
 ];
 
-// Initialize using the native legacy constructor format
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+// =====================================================
+// INITIALIZE NEW GENAI SDK
+// =====================================================
+const genAI = new GoogleGenAI({
+  apiKey: process.env.GEMINI_API_KEY
+});
 
 // =====================================================
-//  CLI ARG HELPER
+// CLI ARG HELPER
 // =====================================================
 function getArg(flag, def = "") {
   const idx = process.argv.indexOf(flag);
-  if (idx === -1 || idx === process.argv.length - 1) return def;
+
+  if (idx === -1 || idx === process.argv.length - 1) {
+    return def;
+  }
+
   return process.argv[idx + 1];
 }
 
 // =====================================================
-//  NATIVE SDK MODEL CALL (NO GUESSWORK / NO POLYFILLS)
+// NEW GENAI SDK MODEL CALL
 // =====================================================
 async function callModel(modelName, prompt, attempt = 1) {
   try {
     console.log(`\n🚀 Attempt ${attempt}: ${modelName}`);
-    
-    // Correct Native Method: Get model instance first
-    const modelInstance = genAI.getGenerativeModel({ model: modelName });
-    
-    // Correct Native Method: Pass contents directly as an object text wrapper
-    const res = await modelInstance.generateContent({
-      contents: [{ role: "user", parts: [{ text: prompt }] }]
-    });
-    
-    // Correct Native Method: Extract text using the verified functional schema
-    const text = res.response.text();
-    
-    if (!text || !text.trim()) throw new Error("Empty response");
-    console.log(`✅ Success: ${modelName}`);
-    return text;
-  } catch (err) {
-    console.error(`❌ Model ${modelName} encountered an error:`, err.message || err);
-    
-    const errStatus = err.status || err.statusCode || (err.error && err.error.code);
 
+    const response = await genAI.models.generateContent({
+      model: modelName,
+      contents: prompt
+    });
+
+    const text = response.text;
+
+    if (!text || !text.trim()) {
+      throw new Error("Empty response");
+    }
+
+    console.log(`✅ Success: ${modelName}`);
+
+    return text;
+
+  } catch (err) {
+    console.error(
+      `❌ Model ${modelName} encountered an error:`,
+      err.message || err
+    );
+
+    const errStatus =
+      err.status ||
+      err.statusCode ||
+      (err.error && err.error.code);
+
+    // Retry transient server errors
     if ((errStatus === 500 || errStatus === 503) && attempt < 3) {
-      await new Promise(r => setTimeout(r, 1000 * attempt));
+      await new Promise(r => setTimeout(r, 2000 * attempt));
+
       return callModel(modelName, prompt, attempt + 1);
     }
+
+    // Retry rate limits
     if (errStatus === 429) {
-      console.log(`⚠️ Quota exhausted for ${modelName}, switching model...`);
-      return null;
+      console.log(`⚠️ Rate limit hit for ${modelName}. Cooling down...`);
+
+      await new Promise(r => setTimeout(r, 10000));
+
+      return callModel(modelName, prompt, attempt + 1);
     }
-    console.log(`⚠️ Skipping model ${modelName} due to validation/runtime failure.`);
+
+    console.log(
+      `⚠️ Skipping model ${modelName} due to validation/runtime failure.`
+    );
+
     return null;
   }
 }
 
+// =====================================================
+// BULLETPROOF GENERATOR
+// =====================================================
 async function generateBulletproof(prompt) {
   for (const model of MODEL_CHAIN) {
     const out = await callModel(model, prompt);
-    if (out) return out;
-    // Cool down for 2 seconds between fallback shifts to guard API key limits
-    await new Promise(r => setTimeout(r, 2000));
+
+    if (out) {
+      return out;
+    }
+
+    // Cooldown between model attempts
+    await new Promise(r => setTimeout(r, 3000));
   }
-  throw new Error("❌ All free-tier models exhausted or failed");
+
+  throw new Error("❌ All models exhausted or failed");
 }
 
 // =====================================================
-//  MAIN — PHASE 1 (TAILOR ONLY)
+// MAIN — PHASE 1 (TAILOR ONLY)
 // =====================================================
 async function main() {
   const company = getArg("--company");
@@ -91,8 +128,14 @@ async function main() {
   // Resume Mode
   // ---------------------------------------------------
   let resumeMode = "INFRA_ONLY";
-  if (rmArg === "dev") resumeMode = "DEV_ONLY";
-  if (rmArg === "hybrid") resumeMode = "INFRA_PLUS_DEV";
+
+  if (rmArg === "dev") {
+    resumeMode = "DEV_ONLY";
+  }
+
+  if (rmArg === "hybrid") {
+    resumeMode = "INFRA_PLUS_DEV";
+  }
 
   // ---------------------------------------------------
   // Methodologies
@@ -103,19 +146,37 @@ async function main() {
     .filter(Boolean);
 
   const methodList = [];
-  if (methods.includes("agile")) methodList.push("Agile");
-  if (methods.includes("finops")) methodList.push("FinOps");
-  if (methods.includes("ai")) methodList.push("AI");
+
+  if (methods.includes("agile")) {
+    methodList.push("Agile");
+  }
+
+  if (methods.includes("finops")) {
+    methodList.push("FinOps");
+  }
+
+  if (methods.includes("ai")) {
+    methodList.push("AI");
+  }
 
   // ---------------------------------------------------
   // Load Core Inputs
   // ---------------------------------------------------
-  const baseResume = fs.readFileSync("base_resume.md", "utf8");
-  const systemPrompt = fs.readFileSync("templates/system_prompt.txt", "utf8");
+  const baseResume = fs.readFileSync(
+    "base_resume.md",
+    "utf8"
+  );
+
+  const systemPrompt = fs.readFileSync(
+    "templates/system_prompt.txt",
+    "utf8"
+  );
+
   const jdText = fs.readFileSync(jdFile, "utf8");
 
   const devSkills =
-    resumeMode !== "INFRA_ONLY" && fs.existsSync("development.md")
+    resumeMode !== "INFRA_ONLY" &&
+    fs.existsSync("development.md")
       ? fs.readFileSync("development.md", "utf8")
       : "(none)";
 
@@ -123,6 +184,7 @@ async function main() {
   // FAANG / BIG-TECH DETECTION
   // ---------------------------------------------------
   const upper = company.toUpperCase();
+
   const isFAANG = [
     "GOOGLE",
     "ALPHABET",
@@ -139,14 +201,20 @@ async function main() {
     isFAANG &&
     resumeMode !== "INFRA_ONLY" &&
     fs.existsSync("development_google_template.md")
-      ? fs.readFileSync("development_google_template.md", "utf8")
+      ? fs.readFileSync(
+          "development_google_template.md",
+          "utf8"
+        )
       : "(none)";
 
   const includeProjects =
-    resumeMode === "DEV_ONLY" || resumeMode === "INFRA_PLUS_DEV" ? "YES" : "NO";
+    resumeMode === "DEV_ONLY" ||
+    resumeMode === "INFRA_PLUS_DEV"
+      ? "YES"
+      : "NO";
 
   // =====================================================
-  //  FINAL PROMPT — PHASE 1 BOUNDARY + ANTI-DUPLICATION
+  // FINAL PROMPT
   // =====================================================
   const prompt = `
 ${systemPrompt}
@@ -195,20 +263,38 @@ ${bigTechReference}
 `.trim();
 
   console.log("\n🔥 Phase-1 Tailoring started...");
+
   const aiText = await generateBulletproof(prompt);
 
   // ---------------------------------------------------
   // Output
   // ---------------------------------------------------
   const safeCompany = company.replace(/[^a-z0-9]+/gi, "_");
+
   const safeRole = jobTitle.replace(/[^a-z0-9]+/gi, "_");
-  const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
-  const outDir = path.join("jobs", safeCompany, safeRole, timestamp);
+
+  const timestamp = new Date()
+    .toISOString()
+    .replace(/[:.]/g, "-");
+
+  const outDir = path.join(
+    "jobs",
+    safeCompany,
+    safeRole,
+    timestamp
+  );
 
   fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, "raw.txt"), aiText, "utf8");
 
-  console.log(`\n✅ Phase-1 output written to ${outDir}/raw.txt`);
+  fs.writeFileSync(
+    path.join(outDir, "raw.txt"),
+    aiText,
+    "utf8"
+  );
+
+  console.log(
+    `\n✅ Phase-1 output written to ${outDir}/raw.txt`
+  );
 }
 
 main().catch(err => {
