@@ -1,19 +1,26 @@
 import fs from "fs";
 import path from "path";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+//import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from '@google/genai';
 
 // =====================================================
 //  FREE-TIER SAFE MODEL ROTATION (BEST → LAST RESORT)
 // =====================================================
+//const MODEL_CHAIN = [
+  //"gemini-2.5-flash",
+  //"gemini-flash-latest",
+  //"gemini-2.0-flash",
+  //"gemini-1.5-flash",
+  //"gemini-2.5-flash-lite",
 const MODEL_CHAIN = [
-  "gemini-2.5-flash",
-  "gemini-flash-latest",
-  "gemini-2.0-flash",
-  "gemini-1.5-flash",
-  "gemini-2.5-flash-lite"
+  "gemini-2.5-flash",     // Use once available in your endpoint
+  "gemini-2.0-flash",     // Current fast default
+  "gemini-1.5-flash",     // Highly stable fallback
+  "gemini-1.5-pro"        // High-intelligence fallback
+//];
 ];
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenAI();
 
 // =====================================================
 //  CLI ARG HELPER
