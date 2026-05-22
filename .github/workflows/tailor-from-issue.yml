@@ -34,7 +34,8 @@ jobs:
             function extract(label) {
               const re = new RegExp(`^${label}: *(.*)$`, "mi");
               const m = body.match(re);
-              return m ? m[1].trim() : "";
+              // Clean out internal double quotes to prevent bash string argument issues
+              return m ? m[1].trim().replace(/"/g, '\\"') : "";
             }
 
             const company = extract("Company");
