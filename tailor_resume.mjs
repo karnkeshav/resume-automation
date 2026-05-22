@@ -37,18 +37,28 @@ function getArg(flag, def = "") {
 async function callModel(model, prompt, attempt = 1) {
   try {
     console.log(`\n🚀 Attempt ${attempt}: ${model}`);
-    const m = genAI.getGenerativeModel({ model });
-    const res = await m.generateContent(prompt);
-    const text = res.response.text();
+    
+    // New SDK pattern: Call genAI.models.generateContent directly
+    const res = await genAI.models.generateContent({
+      model: model,
+      contents: prompt
+    });
+    
+    // New SDK pattern: response.text is a direct string property, not a function
+    const text = res.text;
+    
     if (!text || !text.trim()) throw new Error("Empty response");
     console.log(`✅ Success: ${model}`);
     return text;
   } catch (err) {
-    if ((err.status === 500 || err.status === 503) && attempt < 3) {
+    // New SDK uses different error property objects depending on the response code
+    const errStatus = err.status || err.statusCode || (err.error && err.error.code);
+
+    if ((errStatus === 500 || errStatus === 503) && attempt < 3) {
       await new Promise(r => setTimeout(r, 1000 * attempt));
       return callModel(model, prompt, attempt + 1);
     }
-    if (err.status === 429) {
+    if (errStatus === 429) {
       console.log(`⚠️ Quota exhausted for ${model}, switching model`);
       return null;
     }
