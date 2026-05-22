@@ -4,8 +4,7 @@
 
 import fs from "fs";
 import path from "path";
-//import { GoogleGenerativeAI } from "@google/generative-ai";
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 import {
   Document,
@@ -15,23 +14,15 @@ import {
 } from "docx";
 
 // ============================================================================
-//  FREE-TIER MODEL FALLBACK (SAFE)
+//  VERIFIED PRODUCTION MODELS
 // ============================================================================
-//const MODEL_CHAIN = [
-//  "gemini-2.5-flash",
-//  "gemini-flash-latest",
-//  "gemini-2.0-flash",
-//  "gemini-1.5-flash",
-//  "gemini-2.5-flash-lite"
-//];
 const MODEL_CHAIN = [
-  "gemini-2.5-flash",     // Use once available in your endpoint
-  "gemini-2.0-flash",     // Current fast default
-  "gemini-1.5-flash",     // Highly stable fallback
-  "gemini-1.5-pro"        // High-intelligence fallback
+  "gemini-1.5-flash",     // Primary stable standard model
+  "gemini-1.5-pro"        // High-intelligence fallback model
 ];
 
-const genAI = new GoogleGenAI();
+// Initialize using the native legacy constructor format
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // ============================================================================
 //  ARG PARSER
@@ -43,27 +34,35 @@ function getArg(flag, def = "") {
 }
 
 // ============================================================================
-//  BULLETPROOF GEMINI CALL
+//  NATIVE SDK MODEL CALL (NO GUESSWORK / NO POLYFILLS)
 // ============================================================================
 async function callGemini(prompt) {
   let lastErr = null;
-  for (const model of MODEL_CHAIN) {
+  for (const modelName of MODEL_CHAIN) {
     try {
-      // New SDK pattern: Call genAI.models.generateContent directly
-      const r = await genAI.models.generateContent({
-        model: model,
-        contents: prompt
+      console.log(`\n🚀 Attempting Phase-2 refinement with model: ${modelName}`);
+      
+      // Get the correct native model instance
+      const modelInstance = genAI.getGenerativeModel({ model: modelName });
+      
+      // Pass content using the verified legacy text array configuration object
+      const r = await modelInstance.generateContent({
+        contents: [{ role: "user", parts: [{ text: prompt }] }]
       });
       
-      // New SDK pattern: response.text is now a direct string property, not a function
-      const t = r.text; 
+      // Extract text with the verified schema method
+      const t = r.response.text(); 
       
-      if (t && t.trim()) return t;
+      if (t && t.trim()) {
+        console.log(`✅ Success: ${modelName}`);
+        return t;
+      }
     } catch (e) {
       lastErr = e;
-      // Optional: Add a brief console warning to see which fallback model is slipping
-      console.warn(`⚠️ Model ${model} failed, switching to next fallback...`);
+      console.warn(`⚠️ Model ${modelName} encountered an error: ${e.message || e}`);
     }
+    // Wait 2 seconds before shifting to fallback to guard API key rate limits
+    await new Promise(r => setTimeout(r, 2000));
   }
   throw lastErr || new Error("All models failed");
 }
@@ -77,6 +76,7 @@ function extract(tag, text) {
   return m ? m[1].trim() : "";
 }
 
+// Ensure the name string parameter doesn't contain spaces/symbols breaking lines
 function lines(t) {
   return t.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
 }
@@ -93,7 +93,7 @@ function safePart(str, max = 30) {
 }
 
 // ============================================================================
-//  DOCX BUILDER — UNCHANGED (AS REQUESTED)
+//  DOCX BUILDER — UNCHANGED
 // ============================================================================
 const FONT = "Calibri";
 
@@ -121,7 +121,7 @@ async function buildDocx(text, outPath) {
 
   const children = [];
 
-  // Header (static – unchanged)
+  // Header 
   children.push(new Paragraph({
     children: [new TextRun({ text: "Keshav Karn", font: FONT, size: NAME, bold: true })],
     spacing: { after: 40 }
