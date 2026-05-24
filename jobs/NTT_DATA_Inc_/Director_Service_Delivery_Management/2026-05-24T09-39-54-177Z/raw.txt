@@ -1,0 +1,71 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+8520977573
+keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with over 21 years of global experience in service delivery management, operational transformation, and infrastructure leadership. Proven track record in orchestrating complex IT service lifecycles and driving business impact across highly regulated sectors including healthcare and BFSI. Expert in aligning technical delivery with strategic organizational objectives through rigorous ITSM governance and process optimization. Adept at managing senior executive stakeholder relationships to foster long-term partnerships and operational excellence. Prepared to leverage extensive expertise in team mentorship and global service operations to drive excellence as the Director, Service Delivery Management at NTT DATA, Inc.
+[/SUMMARY]
+
+[CORE_SKILLS]
+IT Service Management | Operational Leadership | Stakeholder Management | Business Strategy Alignment | Service Level Governance | Cross-Functional Team Coaching | Risk & Compliance Management
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Led strategic advisory engagements for enterprise healthcare and BFSI clients, ensuring adherence to NIST and ITIL frameworks.
+- Directed hybrid-cloud cost optimization initiatives to improve financial transparency and resource efficiency.
+- Cultivated relationships with global leadership across US, LatAm, Europe, and APAC to execute platform modernization roadmaps.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Oversee global technology service delivery for large-scale mission-critical data center portfolios.
+- Managed a $30M+ vendor displacement program to insource infrastructure services and improve operational agility.
+- Administer operations for 100,000+ physical IT assets to ensure high availability and performance.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Accountable for $25M annual OPEX, achieving $8M in savings through vendor renegotiation and license optimization.
+- Provided global delivery leadership for complex engagements, ensuring consistency across regional centers.
+- Scaled the Capacity Management Center of Excellence from 10 to 250 members across 5 countries.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Consulted on automation strategies for major telecom and BFSI customers.
+- Orchestrated Problem and Change Management, including chairing Change Advisory Boards and driving Root Cause Analysis.
+- Conducted internal ITIL assessments to enhance compliance and operational efficiency.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Deployed enterprise-grade monitoring solutions including Nagios and Zabbix.
+- Executed release deployments for British Telecom with minimal disruption to business operations.
+- Managed application support for NHS UK to ensure timely resolution of critical platform issues.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Resolved high-impact escalations for mission-critical telecom systems.
+- Mentored L1/L2 engineering teams and developed standard operating procedures.
+[/EXPERIENCE]
+
+[PROJECTS]
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Service Management Platforms: ServiceNow, Remedy, Jira Service Management
+Monitoring & Observability: ScienceLogic, Datadog, New Relic, Prometheus, Tanzu, HP OpenView
+Cloud & Infrastructure: Azure Monitor, CloudWatch, VMware Tanzu, Ansible, SolarWinds
+Financial & Business Intelligence: CoreStack, Flexera, Power BI, MS Visio
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert
+AWS Certified Cloud Practitioner
+FinOps Certified Practitioner
+Google Digital Leader
+IBM Architect & Consulting Badges
+ITIL v3
+COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
