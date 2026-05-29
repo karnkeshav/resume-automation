@@ -1,0 +1,67 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India | 8520977573 | keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished IT executive with over two decades of global leadership in infrastructure modernization, enterprise architecture, and service delivery across regulated sectors such as BFSI and Insurance. Proven capability in driving high-stakes GTM strategies, securing enterprise-grade cloud solutions, and translating complex business problems into scalable technical frameworks. Expert in managing massive distributed systems, optimizing cloud spend, and implementing data-driven operational intelligence. Adept at navigating complex stakeholder environments and delivering high-impact programs for global enterprise clients. Strategically positioned to accelerate innovation and cloud-native transformation as a Senior Manager for AI and Data within EY GDS Consulting.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Cloud-Native Architecture, Global Delivery Leadership, GTM Strategy & Pre-Sales, Enterprise Data Strategy, FinOps Governance, Stakeholder Engagement.
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Architected enterprise cloud transition roadmaps and strategic advisory frameworks for BFSI and healthcare clients in alignment with global NIST standards.
+- Engineered AI-integrated automation workflows that enhanced operational resilience and systemic reliability.
+- Directed hybrid-cloud cost optimization initiatives, delivering transparent financial governance through bespoke dashboarding accelerators.
+- Orchestrated cross-regional collaboration with leadership across the US, Europe, and APAC to ensure delivery excellence in modernization engagements.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Led global mission-critical infrastructure delivery, focusing on high-availability data center operations and capacity management for complex enterprise portfolios.
+- Spearheaded a multi-million dollar vendor displacement program, successfully insourcing core infrastructure services to increase operational agility.
+- Championed large-scale AWS migration strategies and integrated agentic AI systems to facilitate autonomous AIOps responses.
+- Exercised full accountability for the performance and availability of over 100,000 physical IT assets.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed complex multi-million dollar OPEX budgets, driving significant annual savings through rigorous process re-engineering and license optimization.
+- Provided executive delivery leadership for global service engagements, ensuring operational consistency for major banking clients.
+- Scaled a global Capacity Management Center of Excellence from 10 to 250 personnel across five countries.
+- Modernized legacy contact center ecosystems by embedding advanced data-driven insights to optimize response latency.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Delivered high-value consulting engagements focused on automation and service governance for global telecom and financial services institutions.
+- Standardized end-to-end Change Management processes, chairing CAB and driving robust risk-mitigation protocols.
+- Conducted comprehensive ITIL maturity assessments to enhance organizational compliance and process efficiency.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Deployed and scaled enterprise-grade monitoring and infrastructure management toolsets for international clients.
+- Directed release management cycles for high-traffic telecom platforms, ensuring zero-disruption deployments.
+- Oversaw infrastructure support for mission-critical healthcare systems, prioritizing stability and rapid incident resolution.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Managed high-priority escalations and technical troubleshooting for distributed telecom infrastructure.
+- Formalized organizational knowledge through the development of Standard Operating Procedures (SOPs) for tiered engineering teams.
+[/EXPERIENCE]
+
+[PROJECTS]
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Cloud & Data Architecture: Azure, AWS, GCP, Distributed Systems, Data Ingestion Frameworks
+Cloud FinOps: CoreStack, Flexera, Hybrid-Cloud Budget Optimization
+Enterprise Monitoring: Datadog, New Relic, Prometheus, ScienceLogic, Tanzu
+ITSM & Governance: ServiceNow, Jira Service Management, ITIL, COBIT
+AI & Automation: AIOps, GenAI Integration, Scripting for Operational Efficiency
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert, AWS Certified Cloud Practitioner, FinOps Certified Practitioner, Google Digital Leader, ITIL v3, COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
