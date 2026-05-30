@@ -1,0 +1,76 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+Phone: 8520977573
+Email: keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with over two decades of global experience in large-scale service delivery, engineering operations, and digital transformation. Proven track record of architecting high-performance delivery models and driving enterprise-grade reliability for regulated industries including BFSI and Healthcare. Expert in fostering collaborative, cross-geography engineering environments that prioritize operational predictability, automation, and continuous improvement. Committed to leveraging modern AI-driven frameworks and robust governance to maximize delivery velocity and client value. Positioned to advance Solugenix’s delivery maturity and innovation strategy as a Senior Delivery Leader.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Global Delivery Governance | Strategic IT Operations | Distributed Engineering Leadership | Client Relationship Management | Enterprise Architecture | Operational Excellence | Capacity & Resource Optimization | Cross-Functional Team Mentorship
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Advise enterprise healthcare and BFSI clients on complex service delivery frameworks and institutional intelligence.
+- Develop AI-integrated automation roadmaps to enhance service predictability and reduce operational friction.
+- Drive strategic alignment between global technical teams and regional stakeholders to ensure consistent delivery outcomes.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Directed global technology service delivery and infrastructure operations for mission-critical enterprise portfolios.
+- Spearheaded high-stakes vendor displacement and insourcing initiatives, optimizing delivery models for improved agility.
+- Orchestrated the adoption of Cloud, DevOps, and Agentic AI systems to transform legacy support workflows.
+- Manage large-scale capacity planning, resource optimization, and SLA governance for a global asset footprint.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Provided executive leadership for complex multi-year managed services engagements, ensuring end-to-end delivery alignment.
+- Scaled a centralized Capacity Management Center of Excellence across five countries to support global demand.
+- Modernized contact center and support architectures by integrating AI-driven insights for accelerated response times.
+- Executed large-scale budget management and cost-optimization programs while maintaining high-quality delivery standards.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Delivered ITSM consulting and automation strategies tailored to major telecommunications and BFSI clients.
+- Implemented robust delivery governance models, including Change Management oversight and SLA performance frameworks.
+- Standardized delivery SOPs and performance dashboards to improve predictability and service quality.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Deployed enterprise-grade monitoring solutions and managed critical release cycles for global telecom clients.
+- Led technical support and application health initiatives for mission-critical healthcare platforms.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Resolved high-impact technical escalations for mission-critical systems and mentored engineering staff on technical best practices.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Engineering & Automation: API-driven workflow orchestration, CI/CD pipeline engineering, Python/Shell scripting, Backend logic development.
+Cloud & SRE: Azure/AWS/GCP ecosystems, Observability engineering (Datadog/Prometheus), Distributed tracing, SLO-based monitoring.
+Infrastructure & ITSM: ServiceNow, Jira, Ansible, VMware Tanzu, Enterprise monitoring suites.
+Data & Analytics: Power BI, Data pipeline automation, Performance modeling, Query optimization.
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert
+AWS Certified Cloud Practitioner
+FinOps Certified Practitioner
+Google Digital Leader
+IBM Architect & Consulting Badges
+ITIL v3
+COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
