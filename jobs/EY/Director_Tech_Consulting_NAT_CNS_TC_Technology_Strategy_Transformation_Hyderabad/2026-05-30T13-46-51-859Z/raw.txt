@@ -1,0 +1,72 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+8520977573 | keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with two decades of experience leading large-scale digital transformation and infrastructure modernization programs. Expert in aligning complex technical architectures with business objectives to drive efficiency, reliability, and innovation across global markets. Proven track record of scaling engineering organizations and leveraging AI-driven automation to enhance operational performance and service quality. Highly adept at bridging the gap between technical delivery teams and senior stakeholders to solve strategic enterprise challenges. Positioned to leverage extensive experience in platform strategy and technology transformation as a Director for Technology Strategy & Transformation at EY.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Technology Strategy, Digital Transformation, Platform Engineering, AI-Driven Automation, Cloud Architecture, Product Management, DevOps & SRE, Enterprise Governance, Stakeholder Management
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Advise enterprise BFSI and healthcare clients on strategic IT roadmaps, ensuring alignment with global regulatory frameworks and NIST/ITIL standards.
+- Develop AI-integrated automation frameworks to optimize service reliability and reduce systemic technical debt.
+- Lead multi-disciplinary teams in constructing hybrid-cloud financial models and cost-optimization accelerators.
+- Coordinate with cross-regional leadership to execute large-scale platform modernization strategies.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Directed global technology delivery for mission-critical infrastructure portfolios, focusing on capacity management and high availability.
+- Executed a major vendor displacement program, insourcing core infrastructure capabilities to improve organizational agility.
+- Orchestrated Cloud and DevOps enablement initiatives, including full-scale AWS migrations and the deployment of Agentic AI for autonomous AIOps monitoring.
+- Managed end-to-end performance and governance for massive physical and virtual IT asset inventories.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed substantial annual OPEX budgets, delivering high-margin savings through vendor renegotiation and automated license management.
+- Provided global delivery leadership for complex enterprise engagements, establishing standardized service frameworks.
+- Scaled a global Capacity Management Center of Excellence from 10 to 250 practitioners across five countries.
+- Implemented AI-driven diagnostic tools to modernize contact center operations and decrease mean-time-to-resolution.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Delivered advanced ITSM consulting and automation strategies for major telecom and BFSI clients.
+- Instituted governance standards for Problem and Change Management, including chairing Change Advisory Boards.
+- Conducted comprehensive ITIL assessments to enhance operational compliance and delivery speed.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Deployed enterprise-grade monitoring and telemetry solutions for global telecommunications and healthcare platforms.
+- Managed large-scale release deployments, ensuring zero-disruption transitions for critical production environments.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Resolved high-impact escalations within mission-critical telecom systems.
+- Developed technical training programs and standard operating procedures for engineering support teams.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Cloud & Infrastructure: Azure, AWS, Hybrid-Cloud Orchestration, VMware Tanzu
+Engineering & DevOps: API-Driven Automation, CI/CD Pipelines, GitHub Actions, Infrastructure-as-Code
+Observability & SRE: Datadog, Prometheus, ScienceLogic, New Relic, SLO/SLI Management
+ITSM & Governance: ServiceNow, Jira Service Management, COBIT, ITIL v3
+Data & Analytics: Power BI, Predictive Modeling, Automated Reporting
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert, AWS Certified Cloud Practitioner, FinOps Certified Practitioner, Google Digital Leader, ITIL v3, COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
