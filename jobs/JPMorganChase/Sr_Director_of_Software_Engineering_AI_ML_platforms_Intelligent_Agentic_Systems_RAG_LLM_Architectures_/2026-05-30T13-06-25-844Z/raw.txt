@@ -1,0 +1,71 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+Phone: 8520977573
+Email: keshav.karn@gmail.com
+LinkedIn | Credly
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology leader with over two decades of global experience driving large-scale platform modernization, AI integration, and mission-critical engineering initiatives. Proven track record in orchestrating complex, matrixed technical environments across regulated sectors, including BFSI and healthcare. Expert in steering the full lifecycle of intelligent systems, from architectural ideation to high-availability production delivery. Adept at fostering high-performing cross-functional teams to deliver scalable AI/ML solutions and operational excellence. Prepared to elevate machine learning, LLM, and agentic system capabilities as a Senior Director of Software Engineering at JPMorganChase.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Technology Strategy | AI/ML Platform Architecture | LLM & Agentic Systems | RAG Implementation | Operational Excellence | Cross-Functional Leadership | Cloud-Native Engineering | Model Governance | Enterprise Scalability
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — IT Strategy & FinOps Advisor (Sep 2024 – Present)
+- Architected enterprise-grade AI automation frameworks to enhance service reliability and reduce technical failure rates.
+- Direct strategic advisory for BFSI clients focused on modernization roadmaps and advanced technology adoption.
+- Lead multi-departmental alignment to implement industry-standard frameworks for intelligent operations.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Directed global service reliability and platform operations for large-scale mission-critical infrastructure portfolios.
+- Spearheaded the integration of Agentic AI systems to automate AIOps insights and accelerate autonomous incident remediation.
+- Led large-scale technology vendor displacement programs to improve enterprise agility and internal platform capabilities.
+- Managed end-to-end cloud and DevOps enablement, overseeing infrastructure performance for massive global asset footprints.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Provided global delivery leadership for complex financial sector engagements, ensuring consistency in platform performance.
+- Scaled the Capacity Management Center of Excellence from 10 to 250 members across five international geographies.
+- Modernized contact center operations by embedding AI-driven analytics to optimize response architecture.
+- Governed $25M in annual OPEX through automation, resource optimization, and architectural efficiency.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Delivered automation strategies and platform consulting for major telecom and BFSI enterprises.
+- Implemented robust governance frameworks for problem and change management to ensure system stability.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Deployed enterprise-wide monitoring solutions for global healthcare and telecommunications systems.
+- Managed high-stakes release deployments, ensuring zero-disruption transitions for critical production environments.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Resolved high-impact technical escalations for mission-critical telecom systems.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+AI & Machine Learning: LLM Architectures, Retrieval-Augmented Generation (RAG), Fine-tuning, Agentic Systems, MLOps, Intelligent Operations
+Cloud & Infrastructure: Azure, AWS, Hybrid-Cloud, VMware Tanzu, Data Center Operations, Infrastructure-as-Code
+Software Engineering: API-driven Workflow Orchestration, Backend Logic, CI/CD Engineering, GitHub Actions, Python, JavaScript
+Observability & Monitoring: Datadog, New Relic, Prometheus, Grafana, Distributed Tracing, Telemetry Correlation
+ITSM & Governance: ServiceNow, ITIL, COBIT, Model Governance, Data Privacy, FinOps
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert | AWS Certified Cloud Practitioner | FinOps Certified Practitioner | Google Digital Leader | ITIL v3 | COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
