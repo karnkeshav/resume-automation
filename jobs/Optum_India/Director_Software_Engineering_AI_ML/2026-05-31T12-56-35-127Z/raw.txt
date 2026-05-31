@@ -1,0 +1,69 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+Phone: 8520977573
+Email: keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with 21+ years of experience specializing in enterprise-scale software engineering, AI-driven transformation, and platform reliability. Expert at building high-performing engineering organizations capable of delivering complex agentic systems and production-grade intelligent platforms. Proven track record of aligning deep-tech innovation with business outcomes, optimizing SDLC through AI-automation, and scaling multi-disciplinary teams. Committed to fostering innovation, architectural excellence, and rigorous operational maturity. Positioned to drive the next generation of intelligent systems as Director Software Engineering - AI/ML at Optum India.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Agentic AI Architecture | Large-Scale Platform Engineering | AI/ML Lifecycle Management | Engineering Organization Leadership | Strategic Roadmapping | Enterprise AI Integration | Operational Excellence
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Architected AI-driven automation frameworks to transform software development lifecycles, significantly enhancing deployment velocity and system reliability.
+- Advised enterprise healthcare leadership on the integration of intelligent workflows and agent-based platforms to achieve measurable operational efficiency.
+- Cultivated a culture of continuous learning and technical rigor, mentoring cross-functional engineering teams in modern AI development practices.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Directed global engineering and service reliability for mission-critical portfolios, driving the transition toward autonomous, agent-based AIOps ecosystems.
+- Orchestrated a $30M+ platform modernization program, insourcing complex infrastructure services to accelerate agility and technological autonomy.
+- Led the implementation of advanced observability and monitoring frameworks to ensure the stability of high-scale, production-ready systems.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed $25M in operational expenditure, driving significant cost-to-serve reductions through automated system optimizations and strategic vendor management.
+- Scaled a global Center of Excellence from 10 to 250 engineers, overseeing resource planning, budget forecasting, and cross-border program execution.
+- Modernized legacy service delivery by integrating AI-driven decision intelligence, directly improving response times and SLA adherence.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Delivered advanced automation strategies for complex financial and telecom platforms, establishing end-to-end governance and delivery frameworks.
+- Led large-scale technical problem management initiatives, utilizing predictive analytics to drive proactive risk mitigation and change control.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Designed and deployed robust enterprise monitoring and diagnostic solutions for global healthcare and telecommunications clients.
+- Managed end-to-end release cycles for mission-critical applications, ensuring zero-disruption transitions in high-stakes environments.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Resolved high-impact technical escalations within critical telecom networks, refining internal triage processes and diagnostic toolsets.
+- Mentored junior engineering personnel and standardized technical documentation practices for complex system troubleshooting.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+AI & Agentic Ecosystems: LLM Integration (OpenAI, Anthropic), Agent-of-Agents Architectures, AI Lifecycle Management (AI DLC)
+Backend & Automation: Python, FastAPI, API-Driven Workflow Orchestration, Serverless Engineering
+Platform & Cloud: Cloud-Native Architecture (Azure, AWS), Infrastructure-as-Code, CI/CD Engineering
+Observability & Data: Distributed Tracing, Telemetry Correlation, Performance Tuning, Intelligent Dashboards
+Management & Strategy: PI Planning, Work Breakdown Structures, FinOps, Resource Forecasting
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert | AWS Certified Cloud Practitioner | FinOps Certified Practitioner | ITIL v3 | COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
