@@ -1,0 +1,66 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India | 8520977573 | keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with two decades of experience leading global infrastructure, platform operations, and enterprise modernization initiatives. Proven track record of architecting scalable AI-driven solutions and high-availability systems within highly regulated banking and financial services environments. Expert in aligning technical roadmaps with business value, governing complex cross-functional stakeholder ecosystems, and building high-performance, inclusive engineering organizations. Expert at bridging the gap between advanced analytical modeling and mission-critical production reliability. Positioned to drive the AI Modeling Platform vision and institutional decisioning intelligence as an AVP at Synchrony.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Agentic AI Strategy | Platform Engineering | Model Risk Governance | Cross-Functional Leadership | FinOps & Operational Excellence | Agile Delivery | Enterprise Architecture | Stakeholder Alignment
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — IT Strategy & FinOps Advisor (Sep 2024 – Present)
+- Architected enterprise-grade automation frameworks for complex BFSI environments, driving measurable improvements in service reliability and platform consistency.
+- Directed hybrid-cloud cost optimization programs, establishing financial transparency and governance models for global infrastructure portfolios.
+- Managed multi-regional advisory engagements, synchronizing engineering roadmaps with business-critical institutional objectives.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Head – Global Service Reliability Engineering & Platform Operations (Sep 2021 – Aug 2024)
+- Spearheaded the design and deployment of Agentic AI systems to autonomously orchestrate incident response and AIOps-driven remediation.
+- Led large-scale infrastructure insourcing initiatives, modernizing legacy systems and enhancing agility across distributed data center environments.
+- Defined and executed multi-year reliability strategies for mission-critical banking platforms, optimizing capacity and performance metrics.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Orchestrated end-to-end capacity management for major banking clients, ensuring high-availability alignment with evolving risk and regulatory frameworks.
+- Scaled a global Center of Excellence, standardizing delivery methodologies and promoting a culture of continuous operational improvement.
+- Integrated AI-driven insights into contact center architectures to accelerate service delivery and improve decision intelligence.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Consulted on enterprise-scale ITSM and automation strategies, embedding governance and compliance into automated delivery pipelines for financial institutions.
+- Led complex change management and risk-control committees, ensuring high-integrity production deployments in heavily regulated markets.
+
+Company: Tech Mahindra Ltd. — Lead – Infrastructure & Monitoring Solutions (Oct 2006 – May 2010)
+- Deployed enterprise-wide monitoring and observability solutions, establishing baseline metrics for complex healthcare and telecom platform architectures.
+- Managed end-to-end release lifecycles, maintaining operational stability and minimizing downtime for critical public-sector platforms.
+
+Company: Mainstay Teleservices — Technical SME & Support Escalation Lead (Mar 2003 – Oct 2006)
+- Resolved high-impact technical escalations within mission-critical telecom environments, driving rapid issue isolation and remediation.
+- Developed technical SOPs and mentoring programs to elevate the diagnostic capabilities of global engineering teams.
+[/EXPERIENCE]
+
+[PROJECTS]
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Cloud & Infrastructure: AWS, Azure, VMware Tanzu, Ansible, Hybrid-Cloud Orchestration
+AI & Observability: Agentic AI Patterns, AIOps, ScienceLogic, Datadog, Prometheus, New Relic
+ITSM & Governance: ServiceNow, Jira, NIST, ITIL, COBIT, Regulatory Compliance Frameworks
+Financial/Data Modeling: FinOps, Capacity Management, Power BI, Advanced Analytics
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert
+AWS Certified Cloud Practitioner
+FinOps Certified Practitioner
+Google Digital Leader
+ITIL v3
+COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
