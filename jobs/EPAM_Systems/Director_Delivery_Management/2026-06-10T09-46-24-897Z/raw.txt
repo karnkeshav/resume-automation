@@ -1,0 +1,69 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+8520977573
+keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with over 21 years of experience in global service delivery, enterprise infrastructure operations, and large-scale transformation. Expert in steering multi-million dollar portfolios through complex modernization, AI-driven process optimization, and rigorous governance frameworks. Proven track record of building high-performing, distributed teams and fostering deep, trust-based relationships with executive stakeholders to align technology outcomes with business objectives. Adept at navigating high-pressure environments to ensure operational excellence, financial stewardship, and continuous innovation. Positioned to drive strategic value as a Director of Delivery Management at EPAM Systems.
+[/SUMMARY]
+
+[CORE_SKILLS]
+IT Service Delivery, Global Program Governance, FinOps & Budget Stewardship, Stakeholder & Client Relationship Management, Workforce Optimization, Risk & Escalation Management, Cross-functional Leadership, Strategic Transformation
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Advise enterprise clients on complex IT strategies, ensuring delivery alignment with rigorous quality and industry-standard compliance frameworks.
+- Direct FinOps initiatives to engineer hybrid-cloud cost dashboards, enhancing visibility and proactively driving budget optimization.
+- Lead high-stakes advisory engagements for BFSI and healthcare institutions to modernize service delivery and strengthen governance models.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Orchestrated end-to-end delivery for mission-critical infrastructure portfolios, managing multi-million dollar accounts and complex vendor ecosystems.
+- Directed a significant vendor displacement program, successfully insourcing operations to improve service agility and portfolio margin.
+- Facilitated executive-level steering committee sessions to provide delivery updates, manage program risks, and propose continuous improvement innovations.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Accountable for $25M in annual OPEX, executing strategic resource optimization and vendor renegotiations to achieve substantial financial impact.
+- Led the end-to-end delivery lifecycle for global clients, scaling the Capacity Management Center of Excellence from 10 to 250+ resources.
+- Designed workforce strategies across international hubs, ensuring seamless delivery continuity and high-performing team integration.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Implemented enterprise-wide delivery frameworks, introducing standardized SOPs that elevated operational efficiency for large-scale telecom and BFSI accounts.
+- Chaired change advisory boards and led risk management efforts to ensure delivery schedule adherence and quality standards.
+- Partnered with pre-sales teams to contribute to business proposals, driving expansion and long-term client account growth.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Directed enterprise release deployments, minimizing service disruption while maintaining system availability for critical healthcare platforms.
+- Managed large-scale monitoring integrations, ensuring alignment between technical performance metrics and client operational KPIs.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Resolved high-impact escalations for mission-critical telecom systems through rapid troubleshooting and effective incident management.
+- Spearheaded team training initiatives and authored documentation to standardize service procedures and improve L1/L2 response times.
+[/EXPERIENCE]
+
+[PROJECTS]
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Cloud & Financial Governance: Azure, AWS, FinOps, CloudWatch, CoreStack, Flexera
+Service Management: ITSM, ITIL, ServiceNow, Remedy, Jira Service Management
+Automation & Intelligence: AIOps, AI/GenAI Frameworks, Ansible, ScienceLogic
+Operations & Infrastructure: VMware, Network Monitoring, Data Center Management, Capacity Modeling
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+- Microsoft Azure Solutions Architect Expert
+- AWS Certified Cloud Practitioner
+- FinOps Certified Practitioner
+- Google Digital Leader
+- ITIL v3
+- COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+- Post Graduate Programme in Project Management – IIT Roorkee, 2025
+- Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+- Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
