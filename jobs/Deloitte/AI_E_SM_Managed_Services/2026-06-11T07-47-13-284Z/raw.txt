@@ -1,0 +1,66 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+8520977573 | keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with 21+ years of expertise in global managed services delivery, platform modernization, and enterprise architecture. Proven history of navigating complex service landscapes across regulated industries to drive operational resilience and digital transformation. Adept at orchestrating multidisciplinary teams to align high-scale infrastructure with rigorous business objectives and emerging technology standards. Expert in leveraging automation and AI to optimize cost structures and enhance service delivery maturity. Poised to drive exceptional value and sustainable growth as a Senior Manager for AI&E Managed Services at Deloitte.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Managed Services Leadership | Enterprise Architecture | ITIL & Service Operations | AI-Driven Automation | FinOps & Budget Governance | Stakeholder & Risk Management | Scaled Agile (SAFe) | Global Operations
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Architected AI-driven automation frameworks to standardize service delivery and mitigate technical risks within healthcare and BFSI ecosystems.
+- Directed hybrid-cloud FinOps initiatives, establishing cost-optimization accelerators and executive dashboards for enterprise stakeholders.
+- Advised on NIST and ITIL-compliant delivery strategies to modernize complex technical environments.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Led a $30M+ vendor displacement program, successfully insourcing and restructuring critical global platform operations.
+- Engineered Agentic AI systems to autonomously drive AIOps-based root-cause analysis and service reliability improvements.
+- Managed end-to-end delivery of mission-critical data center portfolios, overseeing capacity management for 100,000+ assets.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed $25M annual OPEX, achieving $8M in savings via automation-led efficiency and license rationalization.
+- Established a global Capacity Management Center of Excellence, scaling operations from 10 to 250 practitioners across five countries.
+- Integrated AI-driven insights into contact center operations to accelerate incident resolution and service availability.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Implemented enterprise-grade Problem and Change Management frameworks, chairing CAB sessions for high-stakes telecom engagements.
+- Standardized delivery SOPs and governance dashboards to optimize workflow throughput and quality benchmarks.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Deployed large-scale monitoring ecosystems and managed complex release cycles for mission-critical healthcare applications.
+- Facilitated high-availability support strategies ensuring minimal disruption across distributed infrastructure.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Spearheaded high-impact technical escalations and led infrastructure troubleshooting for mission-critical telecom systems.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Cloud Engineering & DevOps: Azure, AWS, GCP, GitHub Actions, Infrastructure-as-Code, Terraform/Ansible
+Observability & Monitoring: Datadog, New Relic, Prometheus, Grafana, ScienceLogic, Zabbix
+ITSM & Governance: ServiceNow, Jira Service Management, Remedy, ITIL, COBIT
+Development & Automation: Python, JavaScript, API-driven orchestration, CI/CD pipeline engineering
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert | AWS Certified Cloud Practitioner | FinOps Certified Practitioner | Google Digital Leader | ITIL v3 | COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
