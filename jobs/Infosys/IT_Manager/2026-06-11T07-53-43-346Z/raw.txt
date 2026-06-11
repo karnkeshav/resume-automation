@@ -1,0 +1,75 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+Phone: 8520977573
+Email: keshav.karn@gmail.com
+LinkedIn | Credly
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology leader with over two decades of global experience driving enterprise-scale infrastructure, cloud modernization, and operational transformation. Expert in orchestrating complex IT service delivery, building high-performance engineering teams, and aligning technical roadmaps with core business requirements. Proven history of navigating regulated environments to deliver reliable, secure, and cost-optimized infrastructure solutions. Adept at fostering collaborative stakeholder relationships and implementing innovative automation to accelerate digital maturity. Poised to leverage comprehensive infrastructure and development leadership to drive operational excellence as an IT Manager at Infosys.
+[/SUMMARY]
+
+[CORE_SKILLS]
+IT Operations & Infrastructure Management, Strategic Team Leadership, Global Service Delivery, Cloud-Native Engineering, ITSM & Framework Compliance, Enterprise Architecture, Vendor & Stakeholder Relations, Performance & Capacity Optimization.
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Advise enterprise clients on NIST and ITIL-aligned service delivery models to drive operational transparency.
+- Architect automated frameworks to resolve recurring technical bottlenecks and enhance system reliability.
+- Execute hybrid-cloud cost governance and budgetary initiatives across global business units.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Directed mission-critical data center operations and large-scale infrastructure insourcing programs.
+- Led DevOps and cloud migration initiatives, implementing autonomous systems for intelligent incident response.
+- Governed the lifecycle and performance monitoring of over 100,000 enterprise IT assets.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Spearheaded global capacity management centers of excellence, scaling high-velocity teams across five countries.
+- Optimized multi-million dollar annual OPEX through aggressive license management and automation strategies.
+- Modernized contact center infrastructures by integrating data-driven intelligence for rapid issue resolution.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Consulted for global telecom and BFSI sectors on service delivery improvement and automated workflows.
+- Directed change and problem management committees to ensure governance, audit readiness, and minimal service disruption.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Deployed enterprise-wide monitoring solutions for high-stakes healthcare and telecommunications environments.
+- Managed complex release cycles and production support for mission-critical client platforms.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Resolved high-impact technical escalations in mission-critical environments to maintain strict uptime standards.
+- Designed technical training and standard operating procedures for engineering support teams.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Cloud & Systems Engineering: Azure, AWS, VMware, Active Directory, Intune, SCCM.
+Network Architecture: SD-WAN, Checkpoint/Palo Alto Firewalls, Zscaler, Micro-segmentation.
+Software & Automation: API-driven workflows, CI/CD pipelines (GitHub Actions), Python, JavaScript, Shell.
+Observability & ITSM: ServiceNow, Jira, Datadog, Prometheus, New Relic, Power BI.
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+- Microsoft Azure Solutions Architect Expert
+- AWS Certified Cloud Practitioner
+- FinOps Certified Practitioner
+- Google Digital Leader
+- IBM Architect & Consulting Badges
+- ITIL v3
+- COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+- Post Graduate Programme in Project Management – IIT Roorkee, 2025
+- Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+- Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
