@@ -1,0 +1,78 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Strategic technology executive with over two decades of global leadership experience in scaling enterprise platforms, driving operational rigor, and enabling data-centric transformation within highly regulated BFSI and healthcare environments. Expert in aligning complex infrastructure and engineering roadmaps with multi-year business objectives, managing global cross-functional teams, and institutionalizing data management best practices. Proven track record in orchestrating large-scale cloud modernization, AI-enabled process optimization, and governance frameworks that ensure regulatory compliance and resilient service delivery. Positioned to leverage deep expertise in data-driven innovation and platform engineering as the India Head of Chief Data Office at Wells Fargo.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Enterprise Data Strategy | Information Architecture | Data Governance & Risk Management | Large-Scale Platform Engineering | Regulatory Compliance & Audit Readiness | Global Operations Leadership | AI Enablement & Analytics Strategy | Agile Transformation | Financial Discipline & Vendor Management
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Architected enterprise-grade AI automation frameworks to increase service reliability and reduce repeat failure cycles.
+- Spearheaded strategic advisory engagements for BFSI clients, mapping infrastructure modernization to NIST and ITIL security standards.
+- Optimized hybrid-cloud expenditure through the design and deployment of comprehensive FinOps acceleration dashboards.
+- Cultivated high-performing cross-regional stakeholder relationships to ensure execution alignment across US, LatAm, Europe, and APAC markets.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Directed global technology delivery for mission-critical data center portfolios, prioritizing capacity management and high-availability operations.
+- Executed a $30M+ strategic insourcing program, consolidating infrastructure services to drive organizational agility and reduce vendor dependency.
+- Championed AIOps and AWS migration initiatives, delivering autonomous systems capable of real-time diagnostic response.
+- Governed the operational lifecycle of over 100,000 IT assets, ensuring strict adherence to performance metrics and reliability SLOs.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed $25M in annual OPEX, realizing $8M in efficiency gains through automation and license optimization.
+- Provided end-to-end delivery leadership for global banking service engagements, ensuring operational consistency and regulatory alignment.
+- Scaled the Capacity Management Center of Excellence from a regional team to a 250-member global organization.
+- Implemented enterprise-wide AI-driven insights within contact center operations to optimize response latency and customer outcomes.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Directed ITSM consulting strategies and automation roadmaps for major telecommunications and BFSI clients.
+- Established robust governance models including Change Advisory Boards (CAB) and risk-controlled release management frameworks.
+- Conducted comprehensive ITIL maturity assessments to enhance compliance and operational efficiency.
+
+Company: Tech Mahindra Ltd. — Lead – Infrastructure & Monitoring Solutions (Oct 2006 – May 2010)
+- Architected enterprise monitoring solutions utilizing HP OpenView and Nagios to ensure infrastructure stability.
+- Managed release deployments for global telecom platforms with zero-disruption mandates.
+- Directed application support teams for healthcare services, ensuring rigorous issue resolution and SLA attainment.
+
+Company: Mainstay Teleservices — Technical SME & Support Escalation Lead (Mar 2003 – Oct 2006)
+- Managed high-impact technical escalations for mission-critical systems, reducing system downtime through rapid root-cause analysis.
+- Facilitated technical training programs for Tier-1 and Tier-2 engineering staff.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Backend & Automation Engineering: Python, Shell, API-driven orchestration, CI/CD pipelines (GitHub Actions), ETL/Data pipeline development.
+Cloud & Observability Architecture: Azure, AWS, GCP, Datadog, New Relic, Prometheus, Tanzu, distributed tracing.
+ITSM & Governance Tooling: ServiceNow, Jira Service Management, Remedy, COBIT, ITIL framework deployment.
+Infrastructure & Data Management: VMware, Ansible, ScienceLogic, Power BI, Advanced SQL-based indexing, query tuning.
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert
+AWS Certified Cloud Practitioner
+FinOps Certified Practitioner
+Google Digital Leader
+IBM Architect & Consulting Badges
+ITIL v3
+COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
