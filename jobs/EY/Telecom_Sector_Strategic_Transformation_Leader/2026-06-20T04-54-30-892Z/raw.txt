@@ -1,0 +1,74 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+Phone: 8520977573
+Email: keshav.karn@gmail.com
+LinkedIn | Credly
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with two decades of global experience in platform modernization, enterprise automation, and mission-critical systems architecture. Proven track record of spearheading large-scale digital transformation, cloud migration, and AI-led operational efficiency programs within regulated sectors. Expert in aligning complex technical landscapes with business growth objectives through deep proficiency in infrastructure, software engineering, and strategic governance. Adept at navigating multi-national stakeholder environments to deliver sustainable, high-impact technology platforms. Committed to driving innovation and enterprise-grade reliability as a Strategic Transformation Leader for the Telecom Sector at EY.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Enterprise Architecture, Strategic IT Governance, Platform Modernization, Cloud & FinOps Leadership, AI/GenAI Integration, Service Reliability Engineering, Global Delivery Management, Business-Technology Alignment.
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Architected comprehensive IT strategy and FinOps roadmaps to optimize capital expenditure and improve operational transparency for global BFSI and healthcare enterprises.
+- Engineered advanced AI-driven automation frameworks, resulting in a 60% reduction in service failures through predictive diagnostic capabilities.
+- Standardized institutional alignment with NIST and ITIL governance frameworks to enhance compliance and risk management across global operations.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Led a $30M+ strategic vendor displacement program, successfully insourcing core infrastructure services to increase operational agility and cost-efficiency.
+- Directed global mission-critical data center operations, overseeing the management of 100,000+ assets with a focus on high availability.
+- Championed the deployment of Agentic AI systems for autonomous infrastructure remediation, driving superior service reliability and reduced manual intervention.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed $25M annual OPEX budgets, delivering $8M in total cost savings through aggressive automation and vendor license optimization.
+- Scaled a global Capacity Management Center of Excellence from a localized team to a 250-member powerhouse across five countries.
+- Modernized legacy contact center environments by integrating intelligent AI analytics to accelerate response times and improve customer engagement.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Designed and executed ITSM consulting and automation strategies specifically for major telecom sector accounts.
+- Governed Problem and Change Management processes, chairing CABs and implementing risk-mitigation protocols to ensure stability during major releases.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Directed enterprise monitoring and release deployments for British Telecom, ensuring zero-impact transitions for mission-critical services.
+- Spearheaded application support for healthcare platforms, maintaining performance metrics and timely issue resolution under strict SLAs.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Resolved high-impact technical escalations for complex telecom infrastructure, significantly reducing system downtime.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Cloud & FinOps: Azure, AWS, GCP, CoreStack, Flexera, CloudWatch, Azure Monitor
+Platform Engineering: CI/CD Pipelines, API Workflow Orchestration, Serverless Functions, Python, JavaScript, Shell Scripting
+Infrastructure & SRE: VMware Tanzu, Ansible, Distributed Tracing, Observability (Datadog, New Relic, Prometheus)
+ITSM & Governance: ServiceNow, Jira Service Management, ITIL, COBIT, Capacity Modeling
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+- Microsoft Azure Solutions Architect Expert
+- AWS Certified Cloud Practitioner
+- FinOps Certified Practitioner
+- Google Digital Leader
+- IBM Architect & Consulting Badges
+- ITIL v3
+- COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+- Post Graduate Programme in Project Management – IIT Roorkee, 2025
+- Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+- Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
