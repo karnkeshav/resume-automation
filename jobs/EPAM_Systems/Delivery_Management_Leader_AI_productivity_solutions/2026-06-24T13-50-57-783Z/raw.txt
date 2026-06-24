@@ -1,0 +1,73 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with over two decades of global experience in high-stakes delivery leadership, enterprise transformation, and operational scale. Proven ability to bridge the gap between complex engineering architectures and business-centric AI productivity solutions within regulated, multinational environments. Expert in navigating ambiguity to drive large-scale, cross-functional programs from conceptualization to operational excellence. Recognized for building high-performing, distributed engineering organizations that consistently exceed quality and financial targets. Ideally positioned to accelerate EPAM Systems’ AI-driven delivery capabilities as a Delivery Management Leader.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Strategic Portfolio Governance | Enterprise AI/LLM Integration | Financial Operations & Margin Management | Cross-functional Team Leadership | Agile/SAFe Transformation | Program Risk Mitigation | Stakeholder Engagement | Global Delivery Operations
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Architected AI-driven automation frameworks to optimize service reliability and reduce operational failure rates.
+- Advised enterprise clients on hybrid-cloud cost governance and budgetary forecasting.
+- Aligned NIST and ITIL-based delivery frameworks with emerging technological standards for BFSI and healthcare sectors.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Directed mission-critical infrastructure service delivery and large-scale global vendor displacement programs.
+- Spearheaded Cloud and DevOps enablement, integrating Agentic AI systems to autonomously drive AIOps and observability.
+- Managed end-to-end performance and availability for extensive physical and virtual IT asset portfolios.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed multi-million dollar OPEX budgets, driving significant margin improvement through resource optimization and license lifecycle management.
+- Scaled a Capacity Management Center of Excellence, expanding reach across five countries to standardize service quality.
+- Modernized legacy contact center operations through the deployment of advanced AI-driven decision intelligence.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Implemented automated delivery dashboards to enhance throughput and quality metrics for international telecommunications clients.
+- Led complex Problem and Change Management governance, overseeing CAB proceedings and risk-controlled production releases.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Deployed enterprise-grade monitoring and release orchestration pipelines for global healthcare and telecom platforms.
+- Executed high-availability support strategies to ensure strict adherence to SLA/OLA targets.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Resolved complex system escalations and led technical troubleshooting for critical infrastructure components.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+AI & Automation Engineering: Agentic AI, LLM Integration, RAG Pipelines, Automated Diagnostics
+Cloud & Infrastructure: Azure, AWS, GCP, Hybrid Cloud Architecture, FinOps, SRE Frameworks
+Software Development & CI/CD: API-driven Orchestration, Python/JavaScript, GitHub Actions, Scripted Automation
+Observability & Analytics: Datadog, Prometheus, Power BI, Advanced Telemetry, Distributed Tracing
+Governance & Methodology: ITIL/ITSM, SAFe, Agile, Scrum, Zero-touch Promotion Workflows
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert
+AWS Certified Cloud Practitioner
+FinOps Certified Practitioner
+Google Digital Leader
+IBM Architect & Consulting Badges
+ITIL v3
+COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
