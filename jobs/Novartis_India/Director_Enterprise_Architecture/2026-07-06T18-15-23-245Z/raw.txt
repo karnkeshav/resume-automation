@@ -1,0 +1,80 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+Phone: 8520977573
+Email: keshav.karn@gmail.com
+LinkedIn | Credly
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology executive with over 21 years of experience in enterprise architecture, platform modernization, and global service delivery. Expert in bridging complex technical infrastructure with business strategy to drive enterprise-wide digital transformation and operational excellence. Proven track record in orchestrating large-scale architectural governance, managing multi-million dollar portfolios, and delivering secure, reliable systems within regulated industries. Committed to implementing robust, scalable frameworks that align IT investments with corporate growth objectives. Positioned to leverage deep expertise in enterprise architecture and cross-functional leadership to drive innovation and technical excellence as the Director of Enterprise Architecture at Novartis India.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Enterprise Architecture Strategy | Technology Governance | Stakeholder Management | Business Process Optimization | Program Leadership | Global Delivery Management | Capacity Planning | Digital Transformation | Compliance & Regulatory Alignment | Service Reliability Engineering | FinOps Governance
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Developed comprehensive enterprise architectural assessments for healthcare and financial sectors, ensuring adherence to NIST and ITIL standards.
+- Designed an AI-integrated automation framework, significantly enhancing system stability and reducing recurring technical failures.
+- Directed hybrid-cloud FinOps initiatives, establishing cost governance accelerators to optimize enterprise-wide technology spend.
+- Facilitated strategic alignment between international business units and global engineering teams to execute scalable platform roadmaps.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Directed architectural standards for mission-critical data center operations, ensuring high availability for massive global IT portfolios.
+- Executed a large-scale vendor displacement strategy, transitioning services to internal platforms to enhance operational agility.
+- Spearheaded the adoption of Cloud, DevOps, and Agentic AI-driven AIOps, enabling autonomous system self-healing and telemetry-based performance tuning.
+- Managed end-to-end oversight for over 100,000 IT assets, ensuring robust capacity management and alignment with long-term infrastructure goals.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed a $25M OPEX budget, delivering substantial annual savings through license optimization, process automation, and vendor rationalization.
+- Established a Capacity Management Center of Excellence, scaling the function from 10 to 250 practitioners across five international hubs.
+- Led standardization of ITIL-based governance frameworks to drive consistent delivery excellence across complex global service engagements.
+- Modernized customer-facing operations by integrating advanced AI insights to optimize response architectures.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Consulted on automation-centric ITSM strategies for large-scale telecom and banking clients, improving overall delivery throughput.
+- Orchestrated governance through Problem/Change Management committees, chaired CAB, and enforced rigorous risk-controlled release protocols.
+- Conducted structural assessments, implementing custom frameworks to ensure compliance and operational efficiency.
+
+Company: Tech Mahindra Ltd. — Senior Technical Associate (Oct 2006 – May 2010)
+- Architected enterprise monitoring solutions utilizing HP OpenView, Nagios, and Zabbix to ensure infrastructure visibility.
+- Directed release management for mission-critical healthcare platforms, ensuring minimal downtime and operational integrity.
+
+Company: Mainstay Teleservices — Sr. 2nd Line Specialist (Mar 2003 – Oct 2006)
+- Managed complex technical escalations for mission-critical systems, driving rapid root-cause identification and remediation.
+- Standardized SOP documentation and mentored engineering staff on technical best practices.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Architecture Frameworks: TOGAF, ArchiMate, ITIL, COBIT, NIST
+Cloud & FinOps: Azure, AWS, GCP, CoreStack, Flexera, Hybrid-Cloud Optimization
+Automation & Engineering: Python, Shell, API-driven workflows, CI/CD pipelines, GitHub Actions
+Observability & Monitoring: Datadog, New Relic, Prometheus, Tanzu, ScienceLogic
+Enterprise Tooling: ServiceNow, Jira Service Management, Power BI, MS Visio, Ansible
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+- Microsoft Azure Solutions Architect Expert
+- AWS Certified Cloud Practitioner
+- FinOps Certified Practitioner
+- Google Digital Leader
+- IBM Architect & Consulting Badges
+- ITIL v3
+- COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+- Post Graduate Programme in Project Management – IIT Roorkee, 2025
+- Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+- Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
