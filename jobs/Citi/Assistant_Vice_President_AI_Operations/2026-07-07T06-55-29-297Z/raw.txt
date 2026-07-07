@@ -1,0 +1,59 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+Phone: 8520977573
+Email: keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology leader with over two decades of global experience driving operational excellence and large-scale platform modernization within regulated BFSI and healthcare sectors. Expert in bridging the gap between complex engineering requirements and business outcomes through advanced automation, AI-driven insights, and rigorous governance. Proven track record in orchestrating multi-regional teams to deliver mission-critical systems while ensuring adherence to stringent regulatory and risk management standards. Currently seeking to leverage deep expertise in AI operations, infrastructure scalability, and service reliability to drive the Investor Operations AI agenda as an Assistant Vice President at Citi.
+[/SUMMARY]
+
+[CORE_SKILLS]
+AI Operations (AIOps), Model Lifecycle Governance, Investor Operations, Enterprise Platform Scaling, Cross-Functional Technical Leadership, Regulatory Compliance (MRM), Operational Strategy.
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — Senior Manager (Sep 2024 – Present)
+- Architected enterprise-grade automation frameworks utilizing machine learning models, achieving a 60% reduction in service failures.
+- Partnered with global leadership to integrate AI-driven dashboards and FinOps accelerators for proactive hybrid-cloud budget and cost management.
+- Spearheaded strategic ITSM assessments and modernization roadmaps, ensuring alignment with NIST and ITIL security standards.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Associate Director (Sep 2021 – Aug 2024)
+- Directed a $30M+ vendor displacement program, successfully insourcing and restructuring global infrastructure service delivery.
+- Deployed Agentic AI systems to automate AIOps incident response and performance monitoring across large-scale data center portfolios.
+- Oversaw operational integrity and capacity management for 100,000+ physical IT assets, improving service reliability through DevOps enablement.
+
+Company: IBM India Pvt. Ltd. — Global Process Owner (Jan 2014 – Aug 2021)
+- Managed $25M annual OPEX, delivering $8M in value through license optimization and end-to-end automation of service engagement processes.
+- Scaled a global Capacity Management Center of Excellence from 10 to 250 personnel across five countries, standardizing ITIL-based frameworks.
+- Integrated predictive intelligence into contact center operations to accelerate response cycles and improve operational outcomes.
+
+Company: Wipro Technologies — Senior Consultant (Jun 2010 – Nov 2013)
+- Delivered high-impact automation strategies and ITIL-aligned governance frameworks for global BFSI clients.
+- Chaired Change Advisory Boards (CAB) to enforce risk-controlled deployment of releases and infrastructure updates.
+[/EXPERIENCE]
+
+[PROJECTS]
+- AI-Enabled Academic Strategy & Institutional Intelligence Leadership
+- Founder & Executive Architect — AI-Driven Education Platforms
+- Platform vision, monetization model, and enterprise scalability
+- AI-driven dashboards, analytics, and decision intelligence
+- End-to-end leadership across AI strategy, architecture, delivery, and ROI
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+AI & Data Science: LLM Architecture, NLP, Predictive Modeling, IDP, Data Pipelines, Feature Engineering.
+Cloud & Engineering: Azure, AWS, CI/CD Engineering, API Orchestration, Python/Shell Scripting, Distributed System Observability.
+Monitoring & Governance: ServiceNow, Datadog, Prometheus, ScienceLogic, MRM, Regulatory Risk Control.
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert, AWS Certified Cloud Practitioner, FinOps Certified Practitioner, Google Digital Leader, ITIL v3, COBIT 4.1.
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
