@@ -1,0 +1,68 @@
+[CONTACT]
+Keshav Karn
+Hyderabad, India
+8520977573 | keshav.karn@gmail.com
+[/CONTACT]
+
+[SUMMARY]
+Accomplished technology operations executive with over two decades of global leadership in service quality, infrastructure modernization, and process engineering. Expert in architecting rigorous quality frameworks and compliance standards within large-scale, mission-critical environments. Proven track record of enhancing system reliability and operational efficiency through the integration of data-driven insights and standardized governance. Adept at transforming complex service delivery models into high-performing, customer-centric ecosystems. Dedicated to applying deep domain expertise in process excellence and quality management to drive value as an Associate Quality Analyst at Wipro.
+[/SUMMARY]
+
+[CORE_SKILLS]
+Quality Assurance Leadership, Operational Excellence, Regulatory Compliance, Process Optimization, Strategic IT Governance, Service Reliability Engineering
+[/CORE_SKILLS]
+
+[EXPERIENCE]
+Company: PwC — IT Strategy & FinOps Advisor (Sep 2024 – Present)
+- Architected enterprise-grade ITSM assessment frameworks for healthcare and BFSI clients to ensure alignment with NIST and ITIL quality benchmarks.
+- Developed automated service frameworks that significantly enhanced stability and improved consistency in service delivery.
+- Collaborated with global leadership to integrate modernization roadmaps with proactive performance monitoring protocols.
+
+Company: Kyndryl Solutions Pvt. Ltd. — Head – Global Service Reliability Engineering & Platform Operations (Sep 2021 – Aug 2024)
+- Directed global service delivery for mission-critical data center portfolios, ensuring strict adherence to capacity and availability standards.
+- Led large-scale infrastructure insourcing initiatives, prioritizing quality control and service agility.
+- Implemented AIOps-driven response systems to maintain high performance across 100,000+ physical IT assets.
+
+Company: IBM India Pvt. Ltd. — Director-Equivalent – ITSM & Capacity Management (Jan 2014 – Aug 2021)
+- Standardized end-to-end capacity management frameworks and ITIL-based operational quality standards.
+- Built and scaled a global Center of Excellence, fostering consistent service quality across five countries.
+- Integrated predictive insights into contact center operations to optimize response accuracy and customer satisfaction.
+
+Company: Wipro Technologies — ITSM & Automation Leader (Jun 2010 – Nov 2013)
+- Delivered high-impact consulting services for telecom and BFSI customers, focusing on rigorous quality improvement strategies.
+- Established Standard Operating Procedures (SOPs) and governance dashboards to enhance delivery velocity and output quality.
+- Managed Change Advisory Board (CAB) functions and led Root Cause Analysis (RCA) initiatives to mitigate risk.
+
+Company: Tech Mahindra Ltd. — Lead – Infrastructure & Monitoring Solutions (Oct 2006 – May 2010)
+- Deployed enterprise-level monitoring solutions to ensure proactive issue detection and system uptime.
+- Led application support for critical healthcare platforms, emphasizing timely and accurate resolution of technical incidents.
+- Coordinated release deployments with a focus on quality assurance and minimal operational disruption.
+
+Company: Mainstay Teleservices — Technical SME & Support Escalation Lead (Mar 2003 – Oct 2006)
+- Managed complex technical escalations for mission-critical systems, ensuring resolutions met quality and safety protocols.
+- Authored comprehensive SOP documentation and technical training materials for engineering teams.
+[/EXPERIENCE]
+
+[PROJECTS]
+[/PROJECTS]
+
+[TECHNICAL_SKILLS]
+Quality Management: ITIL, COBIT, NIST, SLA/OLA Governance, Risk Management
+Monitoring & Analytics: ScienceLogic, Datadog, New Relic, Prometheus, Power BI
+Infrastructure & ITSM: ServiceNow, Remedy, Jira Service Management, Ansible, VMware Tanzu
+[/TECHNICAL_SKILLS]
+
+[CERTIFICATIONS]
+Microsoft Azure Solutions Architect Expert
+AWS Certified Cloud Practitioner
+FinOps Certified Practitioner
+Google Digital Leader
+ITIL v3
+COBIT 4.1
+[/CERTIFICATIONS]
+
+[EDUCATION]
+Post Graduate Programme in Project Management – IIT Roorkee, 2025
+Master’s in Information Technology – Manipal Academy of Higher Education, 2002
+Bachelor of Science – Anugrah Narayan College, Patna University, 1999
+[/EDUCATION]
