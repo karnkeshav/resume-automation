@@ -5,7 +5,8 @@
   "scripts": {
     "tailor": "node tailor_resume.mjs",
     "refine": "node refine_resume.mjs",
-    "pipeline": "node run_full_resume_pipeline.mjs"
+    "pipeline": "node run_full_resume_pipeline.mjs",
+    "test": "node .github/init.js"
   },
   "dependencies": {
     "@google/genai": "^1.16.0",
